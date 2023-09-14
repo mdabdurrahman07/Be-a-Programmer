@@ -1,64 +1,64 @@
 [
-    {
+    { "id": 1,
       "name": "Introduction to C Programming",
       "img": "https://i.imgur.com/BGU5LZU.png",
-      "credit": "1hr",
+      "credit": 1,
       "price": "15000",
       "details": "C programming is a versatile, procedural language known for its efficiency, low-level memory control, and widespread use in system and application development."
     },
-    {
+    { "id": 2,
       "name": "Introduction to Algorithms",
       "img": "https://i.imgur.com/gMS9XpL.png",
-      "credit": "2hr",
+      "credit": 2,
       "price": "25000",
       "details": "An algorithm is a step-by-step set of instructions or rules used in problem-solving and computation, guiding a computer or human through a specific task or process."
     },
-    {
+    { "id": 3,
       "name": "Introduction to C++ for DSA",
       "img": "https://i.imgur.com/OBwW9to.png",
-      "credit": "10hr",
+      "credit": 10,
       "price": "10000",
       "details": "C++ is a high-level programming language known for its speed and versatility, often used for system software, games, and complex applications, with strong support for object-oriented programming."
     },
-    {
+    { "id": 4,
       "name": "Basic Data Structures",
       "img": "https://i.imgur.com/D0PAQ8B.png",
-      "credit": "5hr",
+      "credit": 5,
       "price": "35000",
       "details": "Basic data structures are fundamental tools for organizing and storing data efficiently. Examples include arrays, lists, stacks, and queues, pivotal in computer science and programming."
     },
-    {
+    { "id": 5,
       "name": "Introduction to OOP Python",
       "img": "https://i.imgur.com/vlbEoG8.png",
-      "credit": "5hr",
+      "credit": 5,
       "price": "19000",
       "details": "Object-Oriented Programming (OOP) in Python is a programming paradigm that structures code around objects, bundling data and methods for efficient, modular, and reusable code design."
     },
-    {
+    { "id": 6,
       "name": "Software Engineering",
       "img": "https://i.imgur.com/T33C5Oh.png",
-      "credit": "2hr",
+      "credit": 2,
       "price": "23000",
       "details": "Software Engineering is the systematic application of principles, methods, and tools to design, develop, and maintain software systems efficiently and effectively."
     },
-    {
+    { "id": 7,
       "name": "AWS, Cloud Computing",
       "img": "https://i.imgur.com/j5IAUk5.png",
-      "credit": "5hr",
+      "credit": 5,
       "price": "35000",
       "details": "Amazon Web Services (AWS) is a leading cloud computing platform offering scalable, on-demand resources and services for businesses worldwide."
     },
-    {
+    { "id": 8,
       "name": "Database (MySQL)",
       "img": "https://i.imgur.com/Y9pZzs3.png",
-      "credit": "5hr",
+      "credit": 5,
       "price": "19000",
       "details": "MySQL is an open-source relational database management system (RDBMS) that stores and manages structured data, widely used for web applications and business software."
     },
-    {
+    { "id": 9,
       "name": "Problem-Solving Part",
       "img": "https://i.imgur.com/S3pyIUE.png",
-      "credit": "2hr",
+      "credit": 2,
       "price": "23000",
       "details": "Problem-solving is the skill of finding effective solutions to challenges by analyzing, strategizing, and taking action, fostering innovation and achieving desired outcomes."
     }
