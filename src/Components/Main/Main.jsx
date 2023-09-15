@@ -28,37 +28,46 @@ const Main = ({AllCards}) => {
             });
       }
       else{
-        SetAllInfo([...AllInfo , infos]) 
-       AllInfo.forEach(moneyValue =>
-            count += moneyValue.credit)
-            if(count > 20){
-                return alert('error')
-             }
-             else{
-               SetRemaining( 20 - count)
-             }
-        if(count <= 20){
-          return  SetTotalCredit(count) 
+        AllInfo.forEach(moneyValue =>
+          count += moneyValue.credit)
+        if(count > 20){
+          toast.error('Credit Limit Only 20 Hours', {
+              position: "top-right",
+              autoClose: 3000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: true,
+              progress: undefined,
+              theme: "colored",
+              });
+              toast.warn('Credit Hour Remaining Zero', {
+                position: "bottom-right",
+                autoClose: 3000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                });
+  
+          }
 
-        }
-        
+
         else{
-        return  toast.error('Credit Limit Only 20 Hours', {
-            position: "top-right",
-            autoClose: 3000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-            progress: undefined,
-            theme: "colored",
-            });
-            
+          SetTotalCredit(count)
+          SetRemaining( 20 - count)  
+          SetAllInfo([...AllInfo , infos])
         }
+                 
+        
+          }
+   
 
 
     
-      }
+
 
      
     }
@@ -79,8 +88,8 @@ const Main = ({AllCards}) => {
                                     <h2 className="text-xl font-semibold">{infoOfCard.name}</h2>
                                     <p className="text-base font-normal text-[#1c1b1b99]">{infoOfCard.details}</p>
                                     <div className="flex justify-between items-center gap-5">
-                                        <p className="flex justify-center items-center gap-2 text-[#1c1b1b99] font-medium"><CgDollar /> Price: <span>{infoOfCard.price}</span></p>
-                                        <p className="flex justify-center items-center gap-2 text-[#1c1b1b99] font-medium"><FaHourglass/> Credit: <span>{infoOfCard.credit}hr</span></p>
+                                        <p className="flex justify-center items-center gap-2 text-[#1c1b1b99] font-medium text-lg"><CgDollar /> Price: <span>{infoOfCard.price}</span></p>
+                                        <p className="flex justify-center items-center gap-2 text-[#1c1b1b99] font-medium text-lg"><FaHourglass/> Credit: <span>{infoOfCard.credit}hr</span></p>
                                     </div>
                                     <div className="card-actions">
                                     <button onClick={() => handleCartData(infoOfCard)} className="px-28 py-2 rounded-lg text-lg font-semibold  bg-blue-500 text-white">Select</button>
